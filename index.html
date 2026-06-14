@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iamkngego – Exclusive Meet & Greet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .header h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .header p {
+            font-size: 1.25rem;
+            color: #c4b5fd;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 2rem;
+            padding: 2rem;
+            width: 100%;
+            max-width: 350px;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(139, 92, 246, 0.5);
+        }
+        .card-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .price {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .price .amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #c4b5fd;
+        }
+        .price .currency {
+            font-size: 1.25rem;
+            vertical-align: super;
+        }
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 1.5rem 0;
+        }
+        .benefits {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        .benefits li {
+            color: #e0e0e0;
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .benefits li::before {
+            content: "✓";
+            color: #c4b5fd;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(90deg, #8b5cf6, #6d28d9);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .gold .btn {
+            background: linear-gradient(90deg, #fbbf24, #d97706);
+        }
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            .header h1 { font-size: 2rem; }
+            .card { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>iamkngego ✨ Exclusive Experience</h1>
+            <p>Choose your VIP access — each package unlocks a deeper connection</p>
+        </div>
+        <div class="cards">
+            <!-- Bronze -->
+            <div class="card">
+                <div class="card-title">Bronze</div>
+                <div class="price"><span class="currency">$</span><span class="amount">1,400</span></div>
+                <div class="divider"></div>
+                <ul class="benefits">
+                    <li>Pre-recorded video greeting from iamkngego</li>
+                    <li>Digital autographed photo</li>
+                    <li>Access to exclusive behind-the-scenes content</li>
+                </ul>
+                <a href=https://buy.stripe.com/test_14A14n0rTcEC6ctekBbo401 target="_blank">Secure Bronze Access →</a>
+            </div>
+            <!-- Silver -->
+            <div class="card">
+                <div class="card-title">Silver</div>
+                <div class="price"><span class="currency">$</span><span class="amount">2,500</span></div>
+                <div class="divider"></div>
+                <ul class="benefits">
+                    <li>All Bronze benefits</li>
+                    <li>Private Q&A session (text/chat)</li>
+                    <li>Exclusive digital wallpaper pack</li>
+                    <li>Early access to new music releases</li>
+                    <li>Free concert tickets for one year</li>
+                </ul>
+                <a href=https://buy.stripe.com/test_14A14n0rTcEC6ctekBbo401 class="btn" target="_blank">Secure Silver Access →</a>
+            </div>
+            <!-- Gold -->
+            <div class="card gold">
+                <div class="card-title">Gold</div>
+                <div class="price"><span class="currency">$</span><span class="amount">4,700</span></div>
+                <div class="divider"></div>
+                <ul class="benefits">
+                    <li>All Silver benefits</li>
+                    <li>Private in-person meet-and-greet (subject to location/availability)</li>
+                    <li>Exclusive merch bundle</li>
+                </ul>
+                <a href=https://buy.stripe.com/test_14A14n0rTcEC6ctekBbo401 class="btn" target="_blank">Secure Gold Access →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
